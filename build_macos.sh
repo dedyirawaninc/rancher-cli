@@ -12,4 +12,5 @@ CROSS=1 make build
 mv $(which rancher) $(which rancher)-$(date +"%y%m%d%H%M")
 cp ./build/bin/rancher_darwin-amd64 /usr/local/bin/rancher
 ls -al /usr/local/bin/rancher*
+rancher --version
 exit 0
